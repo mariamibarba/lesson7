@@ -1,0 +1,66 @@
+img {
+  width: 500px;
+  height: 500px;
+}
+body{
+  max-width: 1200px;
+  width: 100%;
+  background-color: darkorchid;
+
+}
+.caranimleft  {
+  width: 500px;
+  height: 500px;
+  
+  position: absolute;
+  animation-name: animleft;
+  animation-delay: 0.3s;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+
+
+}
+.caranimright{
+  
+  width: 500px;
+  height: 500px;
+  
+  position: absolute;
+  animation-name: animright;
+  animation-delay: 0.3s;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+@keyframes animleft {
+
+  from{
+    left: 0px;
+
+  }
+  to{
+    left: 1000px;
+    
+    
+
+  }
+
+  
+}
+@keyframes animright{
+  from{
+    right: 0px;
+
+  }
+  to{
+    right: 1000px;
+
+  }
+}
