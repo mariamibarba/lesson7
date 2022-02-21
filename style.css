@@ -4,34 +4,61 @@ img {
 }
 body{
 
-  background-color: rgba(192, 13, 192, 0.87);
+  background-color:  rgba(192, 13, 192, 0.87);
 
 }
 .caranimleft  {
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   
   position: absolute;
   animation-name: animleft;
   animation-delay: 0.3s;
-  animation-duration: 10s;
+  animation-duration: 5s;
   animation-timing-function: linear;
-  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  
 
 
 
 }
 .caranimright{
   
-  width: 500px;
-  height: 500px;
+  width: 300px;
+  height: 300px;
   
   position: absolute;
   animation-name: animright;
   animation-delay: 0.3s;
-  animation-duration: 10s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  
+ 
+
+}
+.yellow-ballanim{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  animation-name: yellow-ballanim;
+  animation-delay: 0.3s;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+.blue-ballanim{
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  animation-name: blue-ballanim;
+  animation-delay: 0.3s;
+  animation-duration: 5s;
   animation-timing-function: linear;
   animation-fill-mode: forwards;
   animation-iteration-count: infinite;
@@ -39,35 +66,52 @@ body{
 
 }
 @keyframes animleft {
-  0% {
+  from{
     left: 0px;
-
   }
-  50%{
-    left: 500px;
-    
+  to{
+
+    left: 1200px;
   }
-  100%{
-    left: 1000px;
-  }
-
-
-
-  
-
-  
+ 
 }
 @keyframes animright{
-  0%{
+  from{
     right: 0px;
 
   }
-  50%{
+  to{
+    right: 1200px;
+  }
+  
+  
+}
+
+@keyframes yellow-ballanim{
+  from{
+    top: 500px;
     right: 500px;
-    opacity: 0.5;
 
   }
-  100%{
-    right:1000px ;
+  to{
+    top: 10px;
+    right: 120px;
+    
   }
+  
+  
+}
+@keyframes blue-ballanim{
+  from{
+    top: 500px;
+    left: 500px;
+
+  }
+  to{
+    top: 10px;
+    left: 120px;
+    
+  }
+  
+  
 }
