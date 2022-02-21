@@ -2,6 +2,7 @@ img {
   width: 300px;
   height: 300px;
 }
+
 body{
 
   background-color:  rgba(192, 13, 192, 0.87);
@@ -67,9 +68,12 @@ body{
 }
 @keyframes animleft {
   from{
+    top: 200px;
     left: 0px;
+
   }
   to{
+    top: 200px;
 
     left: 1200px;
   }
